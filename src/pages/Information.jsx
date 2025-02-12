@@ -12,7 +12,11 @@ import img2 from "../assets/Information/image2.png";
 import bg1 from "../assets/Information/bg1.png";
 import bg2 from "../assets/Information/bg2.png";
 import bg3 from "../assets/Information/bg3.png";
+import show1 from "../assets/Information/show1.png";
+import show2 from "../assets/Information/show2.png";
 import switch1 from "../assets/Information/switch1.png";
+import switch2 from "../assets/Information/switch2.png";
+import switch3 from "../assets/Information/switch3.png";
 import part4 from "../assets/Information/part4.png";
 import human1 from "../assets/Information/human1.png";
 import human2 from "../assets/Information/human2.png";
@@ -52,9 +56,9 @@ function Information() {
       </Text>
       <div className="flex flex-col items-center gap-6 p-6">
         <div className="flex flex-wrap justify-center gap-10 p-6">
-          <OverlayImage bgSrc={bg1} overlaySrc={bg1} />
-          <OverlayImage bgSrc={bg2} overlaySrc={bg1} />
-          <OverlayImage bgSrc={bg3} overlaySrc={bg1} />
+          <OverlayImage bgSrc={bg1} overlaySrc={show1} />
+          <OverlayImage bgSrc={bg2} overlaySrc={show2} />
+          <OverlayImage bgSrc={bg3} overlaySrc={bg3} />
         </div>
         <Text variant="body" className="max-w-[900px] text-center">
           Style3D作为一种三维虚拟试衣的软件工具，有利于加快民族服饰的数字化构建，为中华民族传统服饰文化、非遗服饰与技艺的保护及相关产业发展带来重要意义和广阔的经济前景。9月13日下午，衣脉相承实践团走进了浙江凌迪数字科技有限公司，切身感受Style3D技术在实践中的应用以及对传统服饰产业带来的颠覆性变革。
@@ -66,7 +70,7 @@ function Information() {
         万事利丝绸溢彩，民族服饰韵流芳
       </Text>
       <div className="flex justify-center gap-6 p-6">
-        <SwitchImageGrid images={[switch1, switch1, switch1]} />
+        <SwitchImageGrid images={[switch1, switch2, switch3]} />
         <Text variant="body" className="max-w-[200px]">
           华美的丝绸承载着民族服饰丰富的文化内涵。随着时代的变迁，丝绸的工艺不断创新，为民族服饰的设计提供了更多的可能性。同时，创造出既具有民族特色又符合时代潮流的民族服饰，有利于让古老的丝绸文化在新的时代换发出新的活力。9月13日上午，我们也借参观万事利丝绸文化股份有限公司的契机，深刻感受到了丝绸服饰文化与现代时尚元素的奇妙碰撞。  
         </Text>

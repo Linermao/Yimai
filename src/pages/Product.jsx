@@ -36,7 +36,7 @@ import altimg4 from "../assets/Product/altimg4.png";
 function GridImage({src, alt, name, price}) {
   return (
     <div className="flex flex-col gap-2">
-      <a href="buy">
+      <a href="Buy">
         <img src={src} alt={alt} />
         <Text variant="name" className="font-bold">
           {name}
@@ -63,10 +63,10 @@ function Product() {
       {/* part2 */}
       <div className="flex flex-col justify-center items-center gap-10">
         <div className="mx-[100px]">
-          <ImageOverlay src={imgoverlay1} alt="Example1" text="畲族人物文创系列产品" direction="top" />
+          <ImageOverlay src={imgoverlay1} alt="Example1" text="畲族人物文创系列产品" button_text="立即选购" direction="top" />
         </div>
         <div className="mx-[100px]">
-          <ImageOverlay src={imgoverlay2} alt="Example2" text="从上方滑入" direction="right" />
+          <ImageOverlay src={imgoverlay2} alt="Example2" text="AI定制明信片" button_text="即刻定制" direction="right" />
         </div>
       </div>
 
@@ -77,13 +77,13 @@ function Product() {
 
       {/* part4 */}
       <div className="my-[100px] mx-[100px]">
-        <img src={img1} alt="img1" />
+        <ImageOverlay src={img1} alt="img1" text="盐池县文化产品" button_text="立即选购" direction="top" />
       </div>
       <div className="my-10 mx-[100px]">
-        <img src={img2} alt="img1" />
+        <ImageOverlay src={img2} alt="img2" text="“香”承 民族香薰" button_text="立即选购" direction="top" />
       </div>
       <div className="my-10 mx-[100px]">
-        <img src={img3} alt="img1" />
+        <ImageOverlay src={img3} alt="img3" text="藏银式等珠串系列" button_text="立即选购" direction="top" />
       </div>
 
       {/* part5 */}

@@ -29,7 +29,8 @@ function VideoThumbnail({ thumbnail, title, views, daysAgo, link }) {
 
         {/* 播放次数 + 发布时间 */}
         <div className="text-sm text-gray-500 flex justify-between items-center mt-2">
-          <span>{views} 次播放 • {daysAgo} 天前</span>
+          <span>{views} 次播放</span>
+          <span>{daysAgo} 天前</span>
 
           {/* 分享按钮 */}
           <button className="p-1 rounded-full hover:bg-gray-200">

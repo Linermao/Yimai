@@ -10,6 +10,8 @@ import Information from './pages/Information'
 import Product from './pages/Product'
 import Nationality from './pages/Nationality/Nationality'
 import Nationality_Introduce from './pages/Nationality/Nationality_Introduce'
+import Buy from './pages/Buy'
+import VideoPlay from './pages/VideoPlay'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,8 @@ function App() {
         <Route path="/Information" element={<Information />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Nationality_Introduce" element={<Nationality_Introduce />} />
+        <Route path="/Buy" element={<Buy />} />
+        <Route path="/VideoPlay" element={<VideoPlay />} />
       </Routes>
     </Router>
   )

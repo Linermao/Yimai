@@ -1,0 +1,12 @@
+<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_317_1107" fill="white">
+<rect y="11" width="17" height="5" rx="1"/>
+</mask>
+<rect y="11" width="17" height="5" rx="1" stroke="black" stroke-width="3" mask="url(#path-1-inside-1_317_1107)"/>
+<mask id="path-2-inside-2_317_1107" fill="white">
+<rect x="2" y="6" width="13" height="6" rx="1"/>
+</mask>
+<rect x="2" y="6" width="13" height="6" rx="1" stroke="black" stroke-width="3" mask="url(#path-2-inside-2_317_1107)"/>
+<path d="M6.32258 7H2C1.44772 7 1 6.55228 1 6V5.14536C1 4.75248 1.23006 4.39599 1.58806 4.23415L8.31634 1.1924C8.58608 1.07046 8.896 1.07429 9.16264 1.20287L15.4344 4.22723C15.7802 4.394 16 4.74404 16 5.12798V6C16 6.55228 15.5523 7 15 7H6.32258ZM6.32258 7V11.836" stroke="black" stroke-width="1.5"/>
+<path d="M10 7V12" stroke="black" stroke-width="1.5"/>
+</svg>

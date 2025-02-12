@@ -1,11 +1,8 @@
 import { useState } from "react";
 import Text from "./Text";
 
-function ImageOverlay({ src, alt, text, direction = "no", w, h }) {
+function ImageOverlay({ src, alt, text, direction = "no", button_text }) {
   const [isHovered, setIsHovered] = useState(false);
-
-  const width = w || "w-full";
-  const height = h || "h-full";
 
   // 根据方向设置初始位置
   const directionClasses = {
@@ -19,7 +16,7 @@ function ImageOverlay({ src, alt, text, direction = "no", w, h }) {
 
   return (
     <div
-      className={`relative ${width} ${height} overflow-hidden`}
+      className={`relative w-full h-full overflow-hidden`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -30,12 +27,17 @@ function ImageOverlay({ src, alt, text, direction = "no", w, h }) {
       <div
         className={`absolute flex flex-col items-center justify-center w-full h-full 
             transition-transform duration-500 p-4
-           from-gray-600/80 to-transparent
+           from-gray-600/80 to-transparent gap-8
             ${directionClasses[direction]} ${isHovered ? "translate-x-[0%] translate-y-[0%]" : ""}`}
         >
-          <Text variant="title" className="text-white">
+          <p className="text-white text-5xl font-bold">
             {text}
-          </Text>
+          </p>
+          <button className="rounded-2xl bg-black text-white text-2xl font-bold px-6 py-2"
+            onClick={() => window.location.href = "/Buy"}
+          >
+            {button_text}
+          </button>
     </div>
     </div>
   );

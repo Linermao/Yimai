@@ -38,149 +38,155 @@ function Foreign() {
   const videos = [
     {
       thumbnail: video1,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "白嫩软糯入口滑，芝麻香浓沁人心",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video2,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "新手也能学会的汤圆简易做法",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
 
     },
     {
       thumbnail: video3,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "烟花也太震撼了吧！",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video4,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "全村人都来看的灯火会！",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video5,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "山一程，水一程，身向榆关那畔行",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video6,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "“灯月遥相映，人间共良辰”",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video7,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "元宵家人在一起吃汤圆，太幸福了！",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video8,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "醉蟹",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video9,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
-      link: "/Video_9",
+      title: "这不是迷信，这是中国傩戏",
+      views: "70.4万",
+      daysAgo: "4",
+      link: "/VideoPlay",
     },
     {
       thumbnail: video10,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "湘西赶尸，其实没这么可怕",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video11,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "绒花，传统非遗",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video12,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "皮影戏，穿越时光的景象",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
   ]
   const videos2 = [
     {
       thumbnail: video13,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "第一章 中国人对饮食的态度",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video14,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "第二章 中国人的居住之道",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video15,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "第一章 饮食在中国的文化象征",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video16,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "第一章 饮食礼仪与文化",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video17,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "饮茶之道",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video18,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "工匠 塑魂",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video19,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "工匠 寻传承",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
     {
       thumbnail: video20,
-      title: "21321213",
-      views: "123123",
-      days: "123213",
+      title: "工匠 守艺",
+      views: "70.4万",
+      daysAgo: "4",
       link: "#",
     },
   ]
-
+  
+  const icons = Object.entries(
+    import.meta.glob("/src/assets/Foreign/Sidebar/*.svg", { eager: true })
+  )
+    .sort(([a], [b]) => a.localeCompare(b)) // 按文件路径排序
+    .map(([, module]) => module.default);
+  
   return (
     <div>
       <Navbar />
@@ -188,17 +194,19 @@ function Foreign() {
         <div className="absolute left-0 w-[200px] h-screen">
           <Sidebar
             title=""
-            links={["Link1", "Link2", "Link3", "Link4"]}
+            icons={icons}
+            links={["Recommend", "Browsing History", "Figures", "Culture", "Astronomy", "Geography", "History", "Cuisine", "Custom", "Architecture", "Commerce", "Medicine", "Art", "Ancient war" ]}
+            margin = "my-7"
           />
         </div>
-        <div className="absolute flex flex-col right-0 w-[200px] h-screen gap-7 my-6">
+        <div className="absolute flex flex-col right-0 w-[200px] h-auto gap-7 my-6">
           <Sidebar
             title="Hot search"
-            links={["Link1", "Link2", "Link3", "Link4"]}
+            links={["Latern Festival", "Yuanxiao", "Latern Show", "Latern Riddles", "Spring Festival", "Mid-Autumn Festival", "Lucky money", "Spring Festival Gala"]}
           />
           <Sidebar
             title="Unpopular"
-            links={["Link1", "Link2", "Link3", "Link4"]}
+            links={["Winter Clothing Festival", "Shangsi Festival", "Chill sauce", "Sweet germ", "The Lotus Festival", "Coconut powder", "Cured meat"]}
           />
         </div>
 
